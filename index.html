@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        
+        .Acceder{
+        background-color:  rgb(253, 219, 191);
+        text-align: center;     
+        padding: 15px;     
+        }
+
+        .flex-contenedor{
+         display: flex; /*se colocan los elementos en horizontal*/
+         background-color: blue;
+         margin: 20px; 
+
+        }
+        
+        .flex-contenedor > div {  /*flex contenedor bajo div, para que cada div que este dentro del contenedor tenga ese estilo en particular */
+         
+         background-color: white;
+         text-align: center;
+         margin: 15px;
+         padding: 20px; 
+         font-size: 15px;
+         width: 45px;
+
+        }
+        
+       .espacio{
+         display: flex;
+         justify-content: space-around;
+
+       }
+   
+    </style>
+    </head>
+        <body style="display: flex; background-color: #00aea1 ; flex-direction: column">
+        <div class="Acceder"> 
+        <h3 style="text-align: left;" > Ingrese el DNI</form>   </h3>
+        <label for="dni">DNI</label>
+        <input type="text" name="text" id="text"> <br><br>
+        </div>
+        <br><br>
+
+        <div class="flex-contenedor espacio"> 
+            <div>Datos de Reniec</div>   
+            <div>Datos del INPE</div>
+            <div>Dastos del Mininter</div>
+        </div>      
+       
+        <div style="display:Flex; background-color: white; flex-direction: row; justify-content: space-around;">
+           <input type="Submit" value="Acceder"> <b></b>
+           <input type="reset" value="Limpiar">
+        </div >
+        
+        </body>
+
+</html>
+
+
+
+
+
+
